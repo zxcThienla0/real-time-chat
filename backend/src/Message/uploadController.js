@@ -56,7 +56,7 @@ exports.handleFileUpload = async (req, res) => {
             return res.status(400).json({ error: 'Файл не загружен' });
         }
 
-        console.log('📁 File upload details:', {
+        console.log('File upload details:', {
             originalName: req.file.originalname,
             filename: req.file.filename,
             path: req.file.path,
@@ -86,7 +86,7 @@ exports.handleFileUpload = async (req, res) => {
             url: urlPath
         };
 
-        console.log('✅ File uploaded successfully:', fileData);
+        console.log('File uploaded successfully:', fileData);
 
         res.json({
             success: true,
