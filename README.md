@@ -99,7 +99,7 @@ PostgreSQL + Sequelize, JWT, bcrypt
 
 **POST /api/users/upload** - загрузка файлов
 
-##🔧 Ручная установка (без Docker)
+## 🔧 Ручная установка (без Docker)
 **Backend**
 
 ```bash
