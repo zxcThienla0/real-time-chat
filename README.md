@@ -1,4 +1,4 @@
-# 💬 Real-Time Chat Application
+# 💬 Real-Time Chat
 
 <div align="center">
 <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react">
@@ -117,6 +117,9 @@ npm run dev
 ```
 
 ## 📞 Контакты
+
 Telegram: @Thienla0o0
+
 Email: sburcalev@gmail.com
+
 GitHub: zxcThienla0
