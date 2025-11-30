@@ -26,12 +26,25 @@ docker-compose up --build
 
 **Backend API: http://localhost:3001**
 
+## ⚙️ Конфигурация
+**Переменные окружения Backend**
+```env
+DB_NAME=testprisma
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=5432
+PORT=3000
+JWT_ACCESS_SECRET=your_jwt_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+```
+
 ## 🏗 Архитектура
 Приложение состоит из трех сервисов:
 
 **frontend** - React/Vite приложение (порт 5173)
 
-**backend** - Node.js/Express API (порт 3001)
+**backend** - Node.js/Express API (порт 3000)
 
 **database** - PostgreSQL (порт 5432)
 
@@ -58,6 +71,33 @@ PostgreSQL + Sequelize, JWT, bcrypt
 📁 Загрузка файлов и изображений
 
 ⌨️ Индикаторы набора текста
+
+## 🔌 API Endpoints
+**🔐 Аутентификация**
+**POST /api/auth/login** - вход в систему
+
+**POST /api/auth/registration** - регистрация пользователя
+
+**POST /api/auth/logout** - выход из системы
+
+**GET /api/auth/refresh** - обновление токенов
+
+**💬 Сообщения**
+**GET /api/messages/:conversationId** - получение истории сообщений
+
+**👥 Диалоги**
+**GET /api/conversations** - список диалогов пользователя
+
+**GET /api/conversations/:id** - информация о диалоге
+
+**POST /api/conversations** - создание нового диалога
+
+**GET /api/conversations/with/:nickname** - поиск диалога с пользователем
+
+**👤 Пользователи**
+**GET /api/users/profile** - профиль текущего пользователя
+
+**POST /api/users/upload** - загрузка файлов
 
 ##🔧 Ручная установка (без Docker)
 **Backend**
